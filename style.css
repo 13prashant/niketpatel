@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* ==================== Reset Styles ==================== */
+body,
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fdfcf5;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+/* ==================== Global Styles ==================== */
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 6.25rem 0;
+}
+
+/* ==================== Header ==================== */
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+header .container {
+  padding: 0;
+}
+
+.navbar {
+  padding: 1rem 2rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* ==================== Main ==================== */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.hero {
+  position: relative;
+  width: 10rem;
+}
+
+img {
+  width: 100%;
+}
+
+.tricolor {
+  width: 19rem;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
+}
+
+hr {
+  width: 150%;
+  margin-top: -0.45em;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.right {
+  max-width: 20rem;
+  text-align: center;
+}
+
+.right h1 {
+  font-family: "Arizonia", cursive;
+  margin-bottom: 2rem;
+  margin: 0;
+}
+
+.right p {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* ==================== Media Queries ==================== */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 3.125rem;
+  }
+
+  main {
+    flex-direction: row;
+    align-items: center;
+    gap: 10rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .hero {
+    width: 20rem;
+  }
+
+  .tricolor {
+    width: 35rem;
+    top: 10%;
+  }
+
+  .right {
+    text-align: left;
+  }
+}
